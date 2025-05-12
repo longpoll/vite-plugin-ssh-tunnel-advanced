@@ -1,0 +1,62 @@
+
+{
+  "name": "vite-plugin-ssh-tunnel-advanced",
+  "version": "1.0.1",
+  "description": "Vite plugin to create SSH tunnels using system SSH for exposing local dev server remotely.",
+  "type": "module",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.json --outDir dist/esm --declaration --declarationDir dist/types --declarationMap",
+    "build:cjs": "tsc -p tsconfig.cjs.json --outDir dist/cjs",
+    "prepublishOnly": "npm run build",
+    "publish": "npm publish --access=public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longpoll/vite-plugin-ssh-tunnel-advanced.git"
+  },
+  "author": {
+    "name": "longpoll",
+    "url": "https://github.com/longpoll"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/longpoll/vite-plugin-ssh-tunnel-advanced/issues"
+  },
+  "homepage": "https://github.com/longpoll/vite-plugin-ssh-tunnel-advanced#readme",
+  "keywords": [
+    "vite",
+    "plugin",
+    "ssh",
+    "tunnel",
+    "vite-plugin",
+    "dev-server",
+    "remote-access"
+  ],
+  "peerDependencies": {
+    "vite": ">=4.0.0"
+  },
+  "dependencies": {
+    "picocolors": "1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.17",
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
+  }
+}
