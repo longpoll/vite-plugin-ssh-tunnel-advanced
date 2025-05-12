@@ -19,7 +19,7 @@
     "build:esm": "tsc -p tsconfig.json --outDir dist/esm --declaration --declarationDir dist/types --declarationMap",
     "build:cjs": "tsc -p tsconfig.cjs.json --outDir dist/cjs",
     "prepublishOnly": "npm run build",
-    "publish": "npm publish --access=public"
+    "publish": "npm version patch && npm publish --access=public"
   },
   "files": [
     "dist",
