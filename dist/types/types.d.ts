@@ -36,3 +36,4 @@ export interface SshTunnelConfig {
 }
 export type PicoColorKey = 'black' | 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white' | 'gray' | 'bgBlack' | 'bgRed' | 'bgGreen' | 'bgYellow' | 'bgBlue' | 'bgMagenta' | 'bgCyan' | 'bgWhite' | 'bold' | 'dim' | 'italic' | 'underline' | 'inverse' | 'hidden' | 'strikethrough';
 export type PicoFormatter = (str: string | number) => string;
+//# sourceMappingURL=types.d.ts.map

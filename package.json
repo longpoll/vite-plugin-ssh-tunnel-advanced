@@ -1,7 +1,7 @@
 
 {
   "name": "vite-plugin-ssh-tunnel-advanced",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vite plugin to create SSH tunnels using system SSH for exposing local dev server remotely.",
   "type": "module",
   "main": "./dist/cjs/index.cjs",
